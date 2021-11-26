@@ -16,7 +16,9 @@
 		<h3 class="lecturer">授業担当講師の方は<a href="registerLecturer.jsp">こちら</a></h3>
 	</div>
 	<div class="login">
-		<h2><a href="login.jsp">ログイン</a></h2>
+		<h2>ログイン</h2>
+		<h3 class="teacher">クラス担任講師の方は<a href="#">こちら</a>から</h3>
+		<h3 class="lecturer">授業担当講師の方は<a href="#">こちら</a>から</h3>
 	</div>
 </div>
 </body>
