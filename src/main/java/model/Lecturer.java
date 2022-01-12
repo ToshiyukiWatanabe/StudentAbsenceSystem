@@ -3,7 +3,7 @@ package model;
 import java.io.Serializable;
 
 public class Lecturer implements Serializable {
-	private int id;
+	private String loginId;
 	private String familyName;
 	private String givenName;
 	private String password;
@@ -11,15 +11,15 @@ public class Lecturer implements Serializable {
 	public Lecturer() {
 	}
 
-	public Lecturer(int id, String familyName, String givenName, String password) {
-		this.id = id;
+	public Lecturer(String loginId, String familyName, String givenName, String password) {
+		this.loginId = loginId;
 		this.familyName = familyName;
 		this.givenName = givenName;
 		this.password = password;
 	}
 
-	public int getId() {
-		return id;
+	public String getLoginId() {
+		return loginId;
 	}
 
 	public String getFamilyName() {
@@ -34,6 +34,21 @@ public class Lecturer implements Serializable {
 		return password;
 	}
 
+	public void setLoginId(String loginId) {
+		this.loginId = loginId;
+	}
+
+	public void setFamilyName(String familyName) {
+		this.familyName = familyName;
+	}
+
+	public void setGivenName(String givenName) {
+		this.givenName = givenName;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
 
 }

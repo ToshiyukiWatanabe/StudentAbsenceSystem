@@ -3,7 +3,7 @@ package model;
 import java.io.Serializable;
 
 public class Teacher implements Serializable {
-	private String id;
+	private String loginId;
 	private String familyName;
 	private String givenName;
 	private String course;
@@ -15,9 +15,9 @@ public class Teacher implements Serializable {
 	public Teacher() {
 	}
 
-	public Teacher(String id, String familyName, String givenName, String course, String first, String second,
+	public Teacher(String loginId, String familyName, String givenName, String course, String first, String second,
 			String third, String password) {
-		this.id = id;
+		this.loginId = loginId;
 		this.familyName = familyName;
 		this.givenName = givenName;
 		this.course = course;
@@ -27,16 +27,14 @@ public class Teacher implements Serializable {
 		this.password = password;
 	}
 
-	public Teacher(String id, String password) {
-		this.id = id;
+	public Teacher(String loginId, String password) {
+		this.loginId = loginId;
 		this.password = password;
 	}
-
-
-	public String getId() {
-		return id;
+	/* getter */
+	public String getLoginId() {
+		return loginId;
 	}
-
 
 	public String getFamilyName() {
 		return familyName;
@@ -67,10 +65,44 @@ public class Teacher implements Serializable {
 		return third;
 	}
 
-
 	public String getPassword() {
 		return password;
 	}
+
+	/* setter */
+	public void setLoginId(String loginId) {
+		this.loginId = loginId;
+	}
+
+	public void setFamilyName(String familyName) {
+		this.familyName = familyName;
+	}
+
+	public void setGivenName(String givenName) {
+		this.givenName = givenName;
+	}
+
+	public void setCourse(String course) {
+		this.course = course;
+	}
+
+	public void setFirst(String first) {
+		this.first = first;
+	}
+
+	public void setSecond(String second) {
+		this.second = second;
+	}
+
+	public void setThird(String third) {
+		this.third = third;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+
 
 
 }

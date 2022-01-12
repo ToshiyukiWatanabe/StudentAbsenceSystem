@@ -12,7 +12,7 @@
 
         <dl>
         	<dt>id(英数字20字以内)</dt>
-        	<dd><input type="text" name="id" autocapitalize="id" size="20"></dd>
+        	<dd><input type="text" name="loginId" autocapitalize="loginId" size="20"></dd>
             <dt>姓</dt>
             <dd><input type="text" name="familyName" autocomplete="familyName" size="10"></dd>
 

@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>クラス担任講師用ログインページ</title>
+<title>授業担当講師用ログイン</title>
 </head>
 <body>
-<h1>クラス担任講師用ログインページ</h1>
-<form action="/StudentAbsenceSystem/LoginTeacher" method="post">
+<h1>授業担当講師用ログインページ</h1>
+<form action="/StudentAbsenceSystem/LoginLecturer" method="post">
 <dl>
 	<dt>ユーザーID</dt>
 	<dd><input type="text" name="loginId" size="20"></dd>
@@ -21,6 +21,6 @@
 <font color="red">${error}</font>
 
 <p><a href="index.jsp">TOP</a></p>
-<p>クラス担任講師用登録ページは<a href="registerTeacher.jsp">こちら</a>から</p>
+<p>授業担当講師用登録ページは<a href="registerLecturer.jsp">こちら</a>から</p>
 </body>
 </html>

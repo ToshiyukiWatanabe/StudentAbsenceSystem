@@ -8,6 +8,10 @@
 </head>
 <body>
 <p>登録が完了しました。</p>
-<a href="index.jsp">戻る</a>
+<dl>
+	<dd><a href="index.jsp">戻る</a></dd>
+	<dd><a href="loginTeacher.jsp">ログインページへ</a></dd>
+</dl>
+
 </body>
 </html>
