@@ -7,9 +7,9 @@ import java.sql.SQLException;
 public class CommonDAO {
 	protected final String DRIVER_NAME = "com.mysql.jdbc.Driver";
 
-	protected final String JDBC_URL = "jdbc:mysql://localhost:3306/sasdb";
-	protected final String DB_USER = "root";
-	protected final String DB_PASS = "B10n-T4w";
+	protected final String JDBC_URL = "";
+	protected final String DB_USER = "";
+	protected final String DB_PASS = "";
 
 	protected Connection conn;
 
