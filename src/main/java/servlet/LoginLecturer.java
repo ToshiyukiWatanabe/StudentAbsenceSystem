@@ -24,7 +24,6 @@ public class LoginLecturer extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
-
 		String loginId = request.getParameter("loginId");
 		String password = request.getParameter("password");
 
@@ -33,11 +32,11 @@ public class LoginLecturer extends HttpServlet {
 
 		boolean isLogin = (lecturer != null && loginId.equals(lecturer.getLoginId()) && password.equals(lecturer.getPassword()));
 
-		HttpSession session = request.getSession();
-		session.setAttribute("isLogin", isLogin);
 
 		if(isLogin) {
-			request.getRequestDispatcher("/WEB-INF/jsp/loginResult.jsp").forward(request, response);
+			HttpSession session = request.getSession();
+			session.setAttribute("loginLecturer", lecturer);
+			request.getRequestDispatcher("/WEB-INF/jsp/loginResultLecturer.jsp").forward(request, response);
 		} else {
 			request.setAttribute("error", "IDかパスワードが間違っています");
 			request.getRequestDispatcher("loginLecturer.jsp").forward(request, response);
